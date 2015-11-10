@@ -1,5 +1,10 @@
 # sgx-emulator
 An Emulator for Intel SGX extension
 
-
-Coming soon, stay tuned.
+```
+sudo insmod sgx.ko
+make 
+make c
+make r
+sudo rmmod sgx
+```
