@@ -8,3 +8,14 @@ make c
 make r
 sudo rmmod sgx
 ```
+
+make sure right Linux version
+
+```
+uname -r
+3.19.0-25-generic
+```
+
+
+
+
