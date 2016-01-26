@@ -1,7 +1,7 @@
 SGX-emulator and SDK
 ===
 
-An Emulator and SDK for Intel SGX extension
+The emulator is **performance accurate** comparing other SGX emulators.
 
 Workflow
 ---
@@ -23,5 +23,9 @@ uname -r
 
 We have tested the emulator on 64-bit `Ubuntu 14.04.3 LTS` as virtual machine in **VirtualBox**. (It is important to test it in a virtual-machine scenario!)
 
+Authors
+---
 
-
+* Yuzhe Tang
+* Scott Constable
+* Ju Chen
