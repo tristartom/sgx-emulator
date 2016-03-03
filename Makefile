@@ -35,6 +35,11 @@ debug :
 	@#untrusted 
 	$(CXX)  -rdynamic $(FLAGS_XX) src/user_main_ut.cpp $(LIB_SGX_UT) -ldl -o $(OBJDIR)/a.out
 
+sha:
+	@mkdir -p bin; rm bin/* || true
+	$(CXX) -shared -fPIC $(FLAGS_XX) $(FLAGS_SYSCALL_WRAP) src/user_enclave_app_openssl.cpp src/user_enclave_lib_openssl_sha1.cpp  -Wl,--whole-archive $(LIB_SGX_ENL) -Wl,--no-whole-archive -o $(OBJDIR)/enclave_sha.so
+	$(CXX)  -rdynamic $(FLAGS_XX) src/user_main_sha.cpp $(LIB_SGX_UT) -ldl -o $(OBJDIR)/a.out
+
 c : product-compile 
 
 product-compile : FLAGS_XX += $(UNDEBUG_FLAG)

@@ -8,11 +8,12 @@ Workflow
 
 ```
 sudo insmod sgx.ko
-make 
-make c
+make sha
 make r
 sudo rmmod sgx
 ```
+(alternative, you can also run `make` in the second line).
+
 
 make sure right Linux version
 
