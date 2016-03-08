@@ -1,7 +1,12 @@
 SGX-emulator and SDK
 ===
 
-The emulator is **performance accurate** comparing other SGX emulators.
+Attention: use the emulator with the following specific setting only!
+
+**64-bit `Ubuntu 14.04.3 LTS` guest OS in VirtualBox** 
+
+(This is the setting we have tested so far, and we can ensure the working of our emulator! We may relieve the requirement on VirtualBox in the future release.)
+
 
 Workflow
 ---
@@ -21,12 +26,3 @@ make sure right Linux version
 uname -r
 3.19.0-25-generic
 ```
-
-We have tested the emulator on 64-bit `Ubuntu 14.04.3 LTS` as virtual machine in **VirtualBox**. (It is important to test it in a virtual-machine scenario!)
-
-Authors
----
-
-* Yuzhe Tang
-* Scott Constable
-* Ju Chen
