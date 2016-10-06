@@ -1,7 +1,7 @@
 SGX-emulator and SDK
 ===
 
-Attention: use the emulator with the following specific setting only!
+Use the emulator with the following specific setting only!
 
 **64-bit `Ubuntu 14.04.3 LTS` guest OS in VirtualBox** 
 
