@@ -1,7 +1,7 @@
 SGX-emulator and SDK
 ===
 
-Attention: use the emulator with the following specific setting only!
+Use the emulator with the following specific setting only!
 
 **64-bit `Ubuntu 14.04.3 LTS` guest OS in VirtualBox** 
 
@@ -13,6 +13,10 @@ Before execution, make sure about the right Linux version
 uname -r
 3.19.0-25-generic
 ```
+
+Here's a prebuilt VirtualBox image. The username and password to login the system are both "sgx"
+
+https://www.dropbox.com/s/z18a12m09ajw6ry/sgx-env.vdi?dl=0
 
 Demo 
 ---
